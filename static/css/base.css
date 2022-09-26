@@ -20,6 +20,12 @@ body {
     background: white;
     z-index:-1;
 }
+
+a.category-badge >span.badge:hover {
+    background :#212529 !important;
+    color:#fff !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -69,6 +75,7 @@ body {
 .bg-black {
     background: #000 !important;
 }
+
 
 
 /* -------------------------------- Media Queries */

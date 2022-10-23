@@ -26,7 +26,9 @@
             {%if bag_items %}
                 <div class="table-responsive rounded">
                     {{bag_items}}
-
+                    <br>
+                    <br>
+                    request.session.bag
                     <table class="table table-sm table-borderless">
                         <thead class="text-black">
                             <tr>
@@ -45,7 +47,7 @@
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0"><strong>{{item.product.name}}</strong></p>
-                                    <p class="my-0"><strong>size:</strong>{% if item.has_sizes %} {{item.size|upper}}{%else%}N/A{%endif%}</p>
+                                    <p class="my-0"><strong>size:</strong>{% if item.product.has_sizes %} {{item.size|upper}}{%else%}N/A{%endif%}</p>
                                     <p class="my-0 small text-muted">{{item.product.sku|upper}}</p>
                                 </td>
                                 <td class="py-3">
